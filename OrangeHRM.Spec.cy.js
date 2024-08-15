@@ -2,7 +2,7 @@ describe('test', () => {
     it('login', () => {
       cy.visit('/', { failOnStatusCode: false });
       cy.wait(2000);
-      cy.get("#username").type('Admin');
+      cy.get('#username').type('Admin');
       cy.wait(2000);
       cy.get('#password').type('admin123');
       cy.wait(2000);
