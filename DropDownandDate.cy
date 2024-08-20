@@ -19,7 +19,7 @@ describe('datepickerdropdown',()=>{
 
                 cy.wrap(inputvalue).click()
 
-                cy.wrap(2000)
+                cy.wait(2000)
 
                 cy.get('.day-cell').not('.bounding-month').contains('7')
                 .click()
